@@ -1,9 +1,7 @@
 // genera i 5 numeri dell'alert
 // CREO UN ARRAY DOVE METTERE I 5 NUMERI CASUALI
 let numeri = [];
-for (let i = 0; i < 5; i++) {
-    numeri.push(Math.floor(Math.random() * 100));
-}
+numeriRandomici();
 
 // numeri casuali visuallizzati nell'alert
 // join Specifica una stringa per separare ogni coppia di elementi adiacenti della matrice
@@ -23,9 +21,9 @@ setTimeout(() => {
   // confronto dei numeri funzione
   let numeriCorretti = [];
   confrontoNumeri(userNumeri, numeriCorretti);
-//   stampa in console del risultato e dei numeri che sono Corretti  
- 
-console.log(`Bravo hai individuato ${ numeriCorretti.length} numeri: ${ numeriCorretti.join(", ")}`);
+  //   stampa in console del risultato e dei numeri che sono Corretti  
+
+  console.log(`Bravo hai individuato ${numeriCorretti.length} numeri: ${numeriCorretti.join(", ")}`);
   // funzione chiedoNumeriPersona
   function chiedoNumeriPersona() {
     for (let i = 0; i < 5; i++) {
@@ -33,6 +31,13 @@ console.log(`Bravo hai individuato ${ numeriCorretti.length} numeri: ${ numeriCo
     }
   }
 }, 30000);
+// funzione dei numeri randomici
+function numeriRandomici() {
+  for (let i = 0; i < 5; i++) {
+    numeri.push(Math.floor(Math.random() * 100));
+  }
+}
+
 // funzione confrontoNumeri
 function confrontoNumeri(userNumeri, numeriCorretti) {
   for (let i = 0; i < 5; i++) {
