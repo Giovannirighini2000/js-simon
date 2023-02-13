@@ -1,4 +1,5 @@
 // genera i 5 numeri dell'alert
+// CREO UN ARRAY DOVE METTERE I 5 NUMERI CASUALI
 let numeri = [];
 for (let i = 0; i < 5; i++) {
     numeri.push(Math.floor(Math.random() * 100));
@@ -7,13 +8,15 @@ for (let i = 0; i < 5; i++) {
 // numeri casuali visuallizzati nell'alert
 // join Specifica una stringa per separare ogni coppia di elementi adiacenti della matrice
 alert('memorizza i seguenti numeri,vediamo quanto sei bravo')
-alert(numeri.join(", "));
+// MOSTRO I NUMERI CASUALI DELL'ARRAY
+alert(numeri.join(","));
 
 // timer inzio 30 secondi
+// IMPOSTA TIMER FUNZIONE CHE CHIEDE E CONFRONTA I NUMERI 
 setTimeout(() => {
   let userNumeri = [];
   for (let i = 0; i < 5; i++) {
-    userNumeri.push(parseInt(prompt(`Inserisci i ordine il primo numero fino all'ultimo appariranno altre richieste fino all'eseurimento dei numeri visti in precedenza  ${i + 1}:`)));
+    userNumeri.push(parseInt(prompt(`Inserisci in ordine il primo numero fino all'ultimo appariranno altre richieste fino all'eseurimento dei numeri visti in precedenza  ${i + 1}:`)));
   }
 
   // confronto dei numeri 
