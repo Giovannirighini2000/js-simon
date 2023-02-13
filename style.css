@@ -12,5 +12,8 @@
 #risultatohtml{
     background-color: rgb(150, 255, 127);
     border-radius: 10px;
-    border: 2px dashed greenyellow;
+    border: 2px dashed rgb(47, 113, 255);
+}
+body{
+    background-color: #e77878;
 }
