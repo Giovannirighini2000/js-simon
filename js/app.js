@@ -53,7 +53,7 @@ function inziaIlGioco() {
   // funzione confrontoNumeri
   function confrontoNumeri(userNumeri, numeriCorretti) {
     for (let i = 0; i < 5; i++) {
-      if (numeri.includes(userNumeri[i])) {
+      if (numeri.includes(userNumeri[i]) && !numeriCorretti.includes(userNumeri[i])) {
         numeriCorretti.push(userNumeri[i]);
       }
     }
